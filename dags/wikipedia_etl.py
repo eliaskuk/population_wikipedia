@@ -55,7 +55,6 @@ def population_wikipedia_dag():
             filename=file_path,
             mime_type='text/csv'
         )
-
     # Task dependencies
     file_path = extract_data()
     upload_to_gcs(file_path)
