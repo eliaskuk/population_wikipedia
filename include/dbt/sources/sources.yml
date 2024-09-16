@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: wikipedia_population
+    database: airflow-project-435112 # GCP ProjectID
+
+    tables:
+      - name: countries
+      - name: populations
