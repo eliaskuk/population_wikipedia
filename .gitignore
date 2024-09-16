@@ -1,9 +1,8 @@
-# Ignore env
+
 *.env
-
-# Ignore google service account
 service_account.json
-
-# Ignore log files and directories
 logs/
 *.log
+__pycache__/
+*.pyc
+*.pyo
