@@ -47,7 +47,7 @@ default_args = {
     'start_date': days_ago(1),
     'retries': 1,
 }
-
+# Define DAG
 with DAG(
     dag_id='dag_populations_wikipedia',
     default_args=default_args,
