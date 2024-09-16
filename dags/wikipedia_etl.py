@@ -3,7 +3,6 @@ from datetime import datetime
 import pandas as pd
 from airflow.providers.google.cloud.hooks.gcs import GCSHook
 
-# Define the function to extract data from Wikipedia
 def extract_from_wikipedia_url(url, output_path):
     """
     Extracts data from a Wikipedia URL and saves it to a CSV file.
@@ -15,13 +14,13 @@ def extract_from_wikipedia_url(url, output_path):
     # Read all HTML tables from the URL
     tables = pd.read_html(url)
 
-    # Assume the first table is the population table
+    # First (0) table is the population table
     population_table = tables[0]
     population_table.to_csv(output_path, index=False)
 
     return output_path
 
-# Define the DAG
+# Defining DAG
 @dag(
     dag_id='dag_populations_wikipedia',
     start_date=datetime(2024, 1, 1),
