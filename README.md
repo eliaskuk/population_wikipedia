@@ -14,6 +14,9 @@ requirements.txt: Lists Python dependencies for Airflow and Google Cloud provide
 
 ### Pipeline Overview
 Extract Data: Extracts population data from Wikipedia.
+
 Clean Data: Cleans column names to ensure compatibility with BigQuery.
+
 Upload to GCS: Uploads the cleaned data to a Google Cloud Storage bucket.
+
 Load into BigQuery: Loads the data from GCS into a BigQuery table.
