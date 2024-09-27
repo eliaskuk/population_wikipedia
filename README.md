@@ -3,10 +3,15 @@ This project demonstrates an Apache Airflow pipeline for extracting population d
 
 ### Project Structure
 dags/: Contains the Airflow DAG that extracts and processes population data.
+
 Dockerfile: Defines the Airflow environment.
+
 docker-compose.yaml: Configures the Airflow services for local execution.
+
 populations_wikipedia.csv: Sample CSV file for testing the pipeline.
+
 requirements.txt: Lists Python dependencies for Airflow and Google Cloud providers.
+
 ### Pipeline Overview
 Extract Data: Extracts population data from Wikipedia.
 Clean Data: Cleans column names to ensure compatibility with BigQuery.
